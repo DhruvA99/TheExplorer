@@ -6,8 +6,8 @@ const Slider = (props) => {
   const [checkedMain, setCheckedMain] = useState(true);
 
   useEffect(() => {
-    setTimeout(() => setChecked(!checked), 2000);
-    setTimeout(() => setCheckedMain(!checkedMain), 2000);
+    setTimeout(() => setChecked(!checked), 3000);
+    setTimeout(() => setCheckedMain(!checkedMain), 3000);
   }, []);
   return (
     <div
