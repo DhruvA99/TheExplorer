@@ -1,0 +1,46 @@
+.mainTable {
+  display: block;
+  color: white;
+  align-items: center;
+  margin: 12px;
+  border-collapse: collapse;
+  overflow-y: auto;
+  overflow-x: auto;
+}
+
+/* tbody table {
+  display: block;
+  overflow: auto;
+} */
+
+tr::nth-child(even) {
+  background-color: #f2f2f2;
+  color: white;
+}
+
+td {
+  color: white;
+  padding: 6px;
+  border: 1px solid white;
+}
+th {
+  padding: 2px;
+  border: 1px solid white;
+  background-color: steelblue;
+}
+
+table {
+  margin: 40px;
+  width: 90%;
+  height: 100%;
+  border: 1px solid white;
+  box-shadow: 0 2px 2px 2px rgba(255, 255, 255, 0.6);
+}
+
+table:hover {
+  box-shadow: 0.2px 5px 5px 5px rgba(255, 255, 255, 0.6);
+}
+
+.Link {
+  color: white;
+}

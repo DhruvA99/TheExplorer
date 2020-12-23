@@ -1,0 +1,65 @@
+.HomeContainer {
+  background-size: cover;
+  color: white;
+  background: linear-gradient(rgba(56, 56, 56, 0.5), rgba(0, 0, 0, 0.5))
+      no-repeat,
+    #000 url("images/milky_way_starry_sky_stars_128523_3840x2160.jpg") center
+      center no-repeat;
+  background-size: cover, cover;
+  height: 100vh;
+  width: 100%;
+}
+
+.topText {
+  margin: 20vh 0 10vh;
+  letter-spacing: 1em;
+}
+
+.upperMainText {
+  letter-spacing: 0.4em;
+  font-size: 2.2em;
+  font-family: "Orbitron", sans-serif;
+  border-right: 0.15em solid orange; /*the cursor*/
+  overflow: hidden; /* ensures the content is not revealed before animation*/
+  margin: 0 auto; /*Keeps the content centered and give scroll effect*/
+  animation: typing 3.5s steps(40) 2.1s, blink-caret 0.75s step-end 5 2.1s; /*Two animation:one for text and other for cursor*/
+  /* animation-delay: 1s; */
+}
+.lowerMainText {
+  letter-spacing: 0.4em;
+
+  font-size: 2.2em;
+  font-family: "Orbitron", sans-serif;
+  border-right: 0.15em solid orange; /*the cursor*/
+  overflow: hidden; /* ensures the content is not revealed before animation*/
+  margin: 0 auto; /*Keeps the content centered and give scroll effect*/
+  animation: typing 3.5s steps(40) 2.1s, blink-caret 0.75s step-end 5 2.1s; /*Two animation:one for text and other for cursor*/
+  /* animation-delay: 1s; */
+}
+
+.lowerText {
+  margin: 10%;
+  font-size: 0.9em;
+  letter-spacing: 0.8em;
+}
+
+@keyframes typing {
+  from {
+    visibility: hidden;
+    width: 0;
+  }
+  to {
+    width: 100%;
+    visibility: visible;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}

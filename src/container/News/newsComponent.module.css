@@ -1,0 +1,61 @@
+.MainNewsComponent {
+  background-color: black;
+  color: rgb(65, 131, 192);
+  background: linear-gradient(rgba(56, 56, 56, 0.5), rgba(0, 0, 0, 0.5))
+      no-repeat,
+    #000 url("../Home/images/milky_way_starry_sky_stars_128523_3840x2160.jpg")
+      center center no-repeat;
+  background-size: cover, cover;
+}
+
+.card {
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  background-color: rgb(82, 140, 142);
+  width: 85%;
+  margin: auto;
+  border-radius: 10px;
+}
+.main {
+  position: relative;
+}
+
+.card:hover {
+  box-shadow: 4px 8px 16px 4px rgba(0, 0, 0, 0.3);
+}
+
+.date {
+  font-family: "Roboto Mono", monospace;
+  font-size: 2em;
+  color: black;
+  margin: auto;
+  text-shadow: 0 4px 2px rgba(0, 0, 0, 0.1);
+  font-weight: 1000;
+}
+.nasaImage {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  max-width: 700px;
+  border: blanchedalmond 1px solid;
+  box-shadow: 4px 8px 16px 4px rgba(0, 0, 0, 0.3);
+}
+
+.playcard {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 90%;
+  height: 100%;
+  margin: auto;
+  padding: 30px 0;
+  background-color: #c9e0de;
+  border-radius: 30px;
+}
+p {
+  padding: 20px;
+}
+
+@media only screen and (max-width: 700px) {
+  .nasaImage {
+    height: 40vh;
+  }
+}

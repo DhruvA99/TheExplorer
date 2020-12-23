@@ -1,0 +1,49 @@
+.infoTable {
+  background-color: black;
+  color: wheat;
+  width: auto;
+  background-color: black;
+  height: 100%;
+  width: 100%;
+}
+
+.datepicker {
+  border-radius: 8px;
+  height: 20px;
+  color: white;
+  margin: 10px;
+  background-color: rgb(0, 161, 197);
+}
+.datepicker::placeholder {
+  color: white;
+  padding: 10px 18px;
+  font-size: 1em;
+}
+
+.button {
+  background-color: rgb(162, 38, 107);
+  color: white;
+  margin: 42px 2px;
+  cursor: pointer;
+  padding: 15px 32px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 2px 0 rgba(255, 255, 255, 0.4);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.button:hover {
+  box-shadow: 0px 4px 4px 0 rgba(255, 255, 255, 0.4);
+}
+
+.mainAsteroid {
+  background: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(29, 29, 29, 0.5),
+        rgba(0, 0, 0, 0.5)
+      )
+      no-repeat,
+    #000
+      url("../../components//AsteroidWelcome/images/universe-4226466_1920.jpg")
+      no-repeat center center;
+  width: 100vw;
+  background-size: cover;
+}
