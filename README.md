@@ -1,7 +1,7 @@
 
 ## Built with:
 - React - The JavaScript framework used
-- Redux- State Management
+- Redux - State Management
 - NASA api
 
 
