@@ -41,10 +41,12 @@ class Asteroid extends React.Component {
         )
         .then((res) => {
           this.setState({ res: res.data, loading: false });
-          console.log(res.data);
         })
         .catch((err) => {
           console.log(err);
+          alert(
+            "There is an error in retrieving data for given dates.Please try a different combination of starting and ending dates"
+          );
         });
     } else {
       alert("Please select Start Date and End Date");
@@ -106,6 +108,16 @@ class Asteroid extends React.Component {
       for (var item in this.state.res.near_earth_objects) {
         let midData = [];
         var data1 = this.state.res.near_earth_objects[item];
+        Header = [
+          "S.no",
+          "Name",
+          "ID",
+          "Hazardeous",
+          "Closest Approach Date",
+          "Closest Approach Distance(am)",
+          "Estimated Diameter(min)[km]",
+          "Estimated Diameter(max)[km]",
+        ];
 
         data1.map((key) => {
           let tempData = {
@@ -123,20 +135,9 @@ class Asteroid extends React.Component {
             estimated_dia_max:
               key.estimated_diameter.kilometers.estimated_diameter_max,
           };
-          midData.push(tempData);
-          Header = [
-            "S.no",
-            "Name",
-            "ID",
-            "Hazardeous",
-            "Closest Approach Date",
-            "Closest Approach Distance(am)",
-            "Estimated Diameter(min)[km]",
-            "Estimated Diameter(max)[km]",
-          ];
+          midData = [...midData, tempData];
         });
         mainData.push(midData);
-        console.log(mainData);
       }
       post = <Table mainData={mainData} Header={Header} />;
     }

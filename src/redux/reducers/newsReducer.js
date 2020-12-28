@@ -1,18 +1,22 @@
+import { CHECKLOAD_CHANGE } from "../actions/actionTypes";
 
+const InitialState = {
+  token: null,
+  checkLoad: false,
+};
 
-
-const InitialState={
-    token:null,
-}
-
-const newsReducer=(state=InitialState,action)=>{
-    switch(action.type){
-        default:
-            return {
-                ...state,
-            }
-    }
-}
-
+const newsReducer = (state = InitialState, action) => {
+  switch (action.type) {
+    case CHECKLOAD_CHANGE:
+      return {
+        ...state,
+        checkLoad: action.payload,
+      };
+    default:
+      return {
+        ...state,
+      };
+  }
+};
 
 export default newsReducer;

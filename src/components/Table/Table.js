@@ -4,6 +4,7 @@ import classes from "./Table.module.css";
 const table = (props) => {
   const TableContent = [];
 
+  //open in new tab
   const openInNewTab = (url) => {
     const newWindow = window.open(url, "_blank", "noopener,noreferrer");
     if (newWindow) newWindow.opener = null;
@@ -14,19 +15,14 @@ const table = (props) => {
         <tr key={data.id}>
           <td>{index + 1}</td>
           <td>
-            <a
-              style={{
-                display: "table-cell",
-                cursor: "pointer",
-                textDecorationLine: "underline",
-              }}
+            <button
               className={classes.Link}
               onClick={() => {
                 openInNewTab(data.link);
               }}
             >
               {data.name}
-            </a>
+            </button>
           </td>
           <td>{data.id}</td>
           <td>{data.isHazardeous.toString()}</td>

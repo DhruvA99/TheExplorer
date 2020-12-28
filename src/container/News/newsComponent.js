@@ -23,7 +23,16 @@ class newsComponent extends Component {
   }
 
   render() {
-    let page = <h1>Loading</h1>;
+    let page = (
+      <div className={classes.spinner}>
+        <div className={classes.ldsRing}>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    );
     if (!this.state.loading) {
       page = (
         <div className={classes.main}>
@@ -43,7 +52,11 @@ class newsComponent extends Component {
               >
                 {this.state.res.explanation}
               </p>
-              <img className={classes.nasaImage} src={this.state.res.url} />
+              <img
+                className={classes.nasaImage}
+                src={this.state.res.url}
+                alt="News img"
+              />
             </div>
           </div>
           <br />

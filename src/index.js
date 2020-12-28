@@ -7,7 +7,7 @@ import "react-datepicker/dist/react-datepicker.css";
 import "react-datepicker/dist/react-datepicker-cssmodules.css";
 import { BrowserRouter } from "react-router-dom";
 import { Provider } from "react-redux";
-import { combineReducers, createStore, compose, applyMiddleware } from "redux";
+import { createStore, compose, applyMiddleware } from "redux";
 import thunk from "redux-thunk";
 import newsReducer from "./redux/reducers/newsReducer";
 

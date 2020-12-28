@@ -1,6 +1,6 @@
 .main {
-  width: 100%; /* Ensures the component is the full screen width */
-  height: 100vh; /* We're using this for demo purposes */
+  width: 100%;
+  height: 100%;
   position: relative;
   background-color: transparent;
   overflow: hidden; /* Allows us to slide the panels outside the container without them showing */
@@ -21,14 +21,6 @@
   position: relative; /* Needed to define the z-index */
   z-index: 10; /* Places the panels in front of the prize */
   transition: all 1.8s ease-out; /* Animates the sliding transition */
-}
-.checkbox {
-  position: absolute; /* Force the checkbox at the start of the container */
-  cursor: pointer; /* Indicate the curtain is clickable */
-  width: 100%; /* The checkbox is as wide as the component */
-  height: 100%; /* The checkbox is as tall as the component */
-  z-index: 100; /* Make sure the checkbox is on top of everything else */
-  opacity: 0; /* Hide the checkbox */
 }
 
 .checkedLeft {

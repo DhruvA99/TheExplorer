@@ -22,19 +22,24 @@
   border-right: 0.15em solid orange; /*the cursor*/
   overflow: hidden; /* ensures the content is not revealed before animation*/
   margin: 0 auto; /*Keeps the content centered and give scroll effect*/
-  animation: typing 3.5s steps(40) 3.1s, blink-caret 0.75s step-end 5 2.1s; /*Two animation:one for text and other for cursor*/
-  /* animation-delay: 1s; */
 }
 .lowerMainText {
   letter-spacing: 0.4em;
-
   font-size: 2.2em;
   font-family: "Orbitron", sans-serif;
   border-right: 0.15em solid orange; /*the cursor*/
   overflow: hidden; /* ensures the content is not revealed before animation*/
   margin: 0 auto; /*Keeps the content centered and give scroll effect*/
-  animation: typing 3.5s steps(40) 3.1s, blink-caret 0.75s step-end 5 2.1s; /*Two animation:one for text and other for cursor*/
+}
+.animateUpperText {
+  animation: typing 3.5s steps(40) 2.9s, blink-caret 0.75s step-end 5 2.1s; /*Two animation:one for text and other for cursor*/
   /* animation-delay: 1s; */
+  animation-iteration-count: 1;
+}
+.animateLowerText {
+  animation: typing 3.5s steps(40) 2.9s, blink-caret 0.75s step-end 5 2.1s; /*Two animation:one for text and other for cursor*/
+  /* animation-delay: 1s; */
+  animation-iteration-count: 1;
 }
 
 .lowerText {
