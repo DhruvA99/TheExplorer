@@ -19,7 +19,7 @@ h2 {
   font-family: "Lato", sans-serif;
   margin-bottom: 40px;
   animation: slide 1.5s ease-out;
-  animation-delay: 2.3s;
+  animation-delay: 1s;
   overflow: hidden;
   animation-fill-mode: both;
 }
